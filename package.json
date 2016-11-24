@@ -9,10 +9,10 @@
     "type": "git",
     "url": "https://github.com/natcl/node-red-contrib-screenshot.git"
   },
-  "keywords": ["node-red"],
+  "keywords": ["node-red", "screenshot"],
   "node-red": {
     "nodes": {
-      "template": "screenshot/screenshot.js"
+      "screenshot": "screenshot/screenshot.js"
     }
   }
 }
