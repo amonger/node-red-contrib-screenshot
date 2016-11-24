@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1c2a4a54.0a030e",
+        "type": "screenshot-node",
+        "z": "673b7449.995e24",
+        "name": "",
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "11cef7fd.aa5728"
+            ]
+        ]
+    },
+    {
+        "id": "992385f.71da478",
+        "type": "http in",
+        "z": "673b7449.995e24",
+        "name": "",
+        "url": "/image",
+        "method": "get",
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "1c2a4a54.0a030e"
+            ]
+        ]
+    },
+    {
+        "id": "11cef7fd.aa5728",
+        "type": "template",
+        "z": "673b7449.995e24",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<img src=\"data:image/png;base64,{{payload}}\"style=\"width: 40%; height: 40%\"/>",
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "caf43945.0ccd8"
+            ]
+        ]
+    },
+    {
+        "id": "caf43945.0ccd8",
+        "type": "http response",
+        "z": "673b7449.995e24",
+        "name": "",
+        "x": 750,
+        "y": 120,
+        "wires": []
+    }
+]
