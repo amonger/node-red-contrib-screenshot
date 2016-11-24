@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-screenshot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Node-RED node that takes a screenshot of the host and outputs it as a buffer.",
   "dependencies": {
     "screenshot-desktop": "1.1.0"
@@ -9,7 +9,10 @@
     "type": "git",
     "url": "https://github.com/natcl/node-red-contrib-screenshot.git"
   },
-  "keywords": ["node-red", "screenshot"],
+  "keywords": [
+    "node-red",
+    "screenshot"
+  ],
   "node-red": {
     "nodes": {
       "screenshot": "screenshot/screenshot.js"
